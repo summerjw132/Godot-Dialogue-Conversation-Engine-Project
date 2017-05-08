@@ -1,0 +1,77 @@
+{
+    "data": {
+        "initial": "onceUponATimeThe",
+        "allowCheckpoints": false,
+        "stitches": {
+            "butThenHeDied": {
+                "content": [
+                    "but then he died.",
+                    {
+                        "notIfConditions": null,
+                        "ifConditions": null,
+                        "linkPath": "theEndD",
+                        "option": "WHAT!?!?!?!?"
+                    }
+                ]
+            },
+            "onceUponATimeThe": {
+                "content": [
+                    "Once upon a time...There was a man",
+                    {
+                        "notIfConditions": null,
+                        "ifConditions": null,
+                        "linkPath": "andThatManWasThe",
+                        "option": "I am that man"
+                    },
+                    {
+                        "pageNum": 1
+                    }
+                ]
+            },
+            "theEndD": {
+                "content": [
+                    "The end :D"
+                ]
+            },
+            "andHeGotALLOfThe": {
+                "content": [
+                    "and he got ALL of the ladies.  ALL of them.  ALL.  Every last one.  Yes, even you.",
+                    {
+                        "notIfConditions": null,
+                        "ifConditions": null,
+                        "linkPath": null,
+                        "option": "LUCKY!!!!!!!"
+                    }
+                ]
+            },
+            "andThatManWasThe": {
+                "content": [
+                    "And that man was the bravest man of all time",
+                    {
+                        "notIfConditions": null,
+                        "ifConditions": null,
+                        "linkPath": "butThenHeDied",
+                        "option": "This sounds goooooood!"
+                    },
+                    {
+                        "notIfConditions": null,
+                        "ifConditions": null,
+                        "linkPath": "andHeGotALLOfThe",
+                        "option": "I'm not sure if that's me..."
+                    }
+                ]
+            }
+        },
+        "optionMirroring": true,
+        "editorData": {
+            "textSize": 0,
+            "playPoint": "andHeGotALLOfThe",
+            "libraryVisible": false,
+            "authorName": "Anonymous"
+        }
+    },
+    "updated_at": "2017-04-05T03:20:22Z",
+    "title": "Untitled Story",
+    "created_at": "2017-04-05T03:15:41Z",
+    "url_key": "pf6p"
+}

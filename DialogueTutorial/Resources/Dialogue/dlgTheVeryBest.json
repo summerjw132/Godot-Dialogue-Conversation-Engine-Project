@@ -1,0 +1,71 @@
+{
+   "data": {
+      "initial": "iWannaBeTheVeryB",
+      "allowCheckpoints": false,
+      "stitches": {
+         "end": {
+            "content": [
+               "End."
+            ]
+         },
+         "likeNoOneEverWas": {
+            "content": [
+               "Like no one ever was",
+               {
+                  "notIfConditions": null,
+                  "ifConditions": null,
+                  "linkPath": "toCatchThemIsMyR",
+                  "option": "Ok, ok, what's your plan?"
+               }
+            ]
+         },
+         "iWannaBeTheVeryB": {
+            "content": [
+               "I wanna be the very best",
+               {
+                  "notIfConditions": null,
+                  "ifConditions": null,
+                  "linkPath": "likeNoOneEverWas",
+                  "option": "The VERY best?"
+               },
+               {
+                  "pageNum": 1
+               }
+            ]
+         },
+         "toTrainThemIsMyC": {
+            "content": [
+               "To train them is my cause",
+               {
+                  "notIfConditions": null,
+                  "ifConditions": null,
+                  "linkPath": "end",
+                  "option": "Solid.  I like it! Let's touch base in the future."
+               }
+            ]
+         },
+         "toCatchThemIsMyR": {
+            "content": [
+               "To catch them is my real test",
+               {
+                  "notIfConditions": null,
+                  "ifConditions": null,
+                  "linkPath": "toTrainThemIsMyC",
+                  "option": "Ok, what else?"
+               }
+            ]
+         }
+      },
+      "optionMirroring": true,
+      "editorData": {
+         "textSize": 0,
+         "playPoint": "end",
+         "libraryVisible": false,
+         "authorName": "Anonymous"
+      }
+   },
+   "updated_at": "2017-04-08T15:44:11Z",
+   "title": "Untitled Story",
+   "created_at": "2017-04-08T15:38:01Z",
+   "url_key": "3x4d"
+}
