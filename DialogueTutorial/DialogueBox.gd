@@ -11,11 +11,20 @@ func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
 	
-	set_process(true) #to check for button input
+	
+	#Bad idea: Use _input instead to check for input
+	#set_process(true) #to check for button input
+	
+	
+	self.set_process_input(true) # Checking for input
 	
 	setDialogue("res://Resources/Dialogue/dlgTheVeryBest.json")
 	
-	
+func _input(event):
+	if ( Input.is_action_pressed("dialog_next")):
+		setNextDialogue()
+		
+		
 func _process(delta):
 		if ( Input.is_action_pressed("dialog_next")):
 			setNextDialogue()
@@ -23,6 +32,10 @@ func _process(delta):
 func setText(aString):
 	
 	get_node("RichTextLabel").add_text(aString)
+	
+func clearText():
+	
+	get_node("RichTextLabel").clear()
 	
 func setDialogue(strJSONPath):
 	
@@ -52,8 +65,13 @@ func setNextDialogue():
 	# http://docs.godotengine.org/en/stable/learning/features/inputs/inputevent.html
 	
 	var currentContent = dialogDict["data"]["stitches"][currentDialogKey]["content"]
-	currentDialogKey = currentContent[1]["linkPath"]
-	setText(currentContent[0])
+	print(currentDialogKey)
+	if(currentDialogKey != "end"):
+		print(currentContent[1]["linkPath"])
+		currentDialogKey = currentContent[1]["linkPath"]
+		self.clearText()
+		setText(currentContent[0])
+	
 	
 	
 	
